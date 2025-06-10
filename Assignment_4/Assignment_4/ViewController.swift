@@ -13,12 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var date: UIDatePicker!
     @IBOutlet weak var saveEntry: UILabel!
     
-    var moodEmoji : String = ""
+    var moodEmoji : String = "😐"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        saveEntry.isHidden = true
+        saveEntry.text = ""
     }
 
     @IBAction func moodSelected(_ sender: UISlider) {
@@ -52,11 +52,11 @@ class ViewController: UIViewController {
         
         // get and format date from datepicker
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMMM d"
+        formatter.dateFormat = "MMM d, y"
         let formattedDate = formatter.string(from: date.date)
         
         saveEntry.text = "On \(formattedDate), you felt \(moodEmoji)"
-        saveEntry.isHidden = false
+        //saveEntry.isHidden = false
     }
     
 }

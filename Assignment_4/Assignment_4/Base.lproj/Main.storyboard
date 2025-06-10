@@ -25,25 +25,25 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5IO-OY-rVb">
-                                        <rect key="frame" x="10" y="251.33333333333331" width="373" height="236.66666666666669"/>
+                                        <rect key="frame" x="0.0" y="251.33333333333331" width="393" height="236.66666666666669"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Neutral 😐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jn4-wT-21J">
-                                                <rect key="frame" x="134.33333333333334" y="0.0" width="104.33333333333334" height="26.333333333333332"/>
+                                                <rect key="frame" x="144.33333333333334" y="0.0" width="104.33333333333334" height="26.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Suh-9N-gbX">
-                                                <rect key="frame" x="13" y="56.333333333333371" width="347" height="31"/>
+                                                <rect key="frame" x="13" y="56.333333333333371" width="367" height="31"/>
                                                 <connections>
                                                     <action selector="moodSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="put-c5-cbg"/>
                                                 </connections>
                                             </slider>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="mar-6a-lWv">
-                                                <rect key="frame" x="6" y="116.33333333333337" width="361" height="50"/>
+                                                <rect key="frame" x="16" y="116.33333333333337" width="361" height="50"/>
                                             </datePicker>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0U-vD-m8s">
-                                                <rect key="frame" x="80" y="196.33333333333331" width="213" height="40.333333333333343"/>
+                                                <rect key="frame" x="80" y="196.33333333333331" width="233" height="40.333333333333343"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Save Mood">
