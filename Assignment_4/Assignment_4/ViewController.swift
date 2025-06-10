@@ -56,7 +56,6 @@ class ViewController: UIViewController {
         let formattedDate = formatter.string(from: date.date)
         
         saveEntry.text = "On \(formattedDate), you felt \(moodEmoji)"
-        //saveEntry.isHidden = false
     }
     
 }
