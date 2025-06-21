@@ -16,56 +16,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Ayv-Rb-TPU">
-                                <rect key="frame" x="30" y="89" width="333" height="699"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mysteriousegg" translatesAutoresizingMaskIntoConstraints="NO" id="RAw-7h-BY5">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ayv-Rb-TPU">
+                                <rect key="frame" x="50" y="89" width="293" height="699"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Mysterious Egg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryf-7k-Sfg">
-                                        <rect key="frame" x="0.0" y="0.0" width="333" height="199.66666666666666"/>
-                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="293" height="226.33333333333334"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="MOP-Qj-A8c">
-                                        <rect key="frame" x="0.0" y="249.66666666666669" width="333" height="199.66666666666669"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MOP-Qj-A8c">
+                                        <rect key="frame" x="0.0" y="236.33333333333331" width="293" height="226.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Success!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31g-xj-Fhf">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="78"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                                <nil key="textColor"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="293" height="108.33333333333333"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You’ve just received a weird colored egg in the mail. What do you do with it?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt9-ux-F6A">
-                                                <rect key="frame" x="0.0" y="128" width="333" height="71.666666666666686"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <nil key="textColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You’ve just received a weird colored egg in the mail. What do you do with it?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mt9-ux-F6A">
+                                                <rect key="frame" x="0.0" y="118.33333333333337" width="293" height="108"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="xrL-Xk-S00">
-                                        <rect key="frame" x="0.0" y="499.33333333333343" width="333" height="199.66666666666669"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xrL-Xk-S00">
+                                        <rect key="frame" x="0.0" y="472.66666666666657" width="293" height="226.33333333333331"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgX-Zs-Qtr">
-                                                <rect key="frame" x="0.0" y="0.0" width="333" height="85"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgX-Zs-Qtr">
+                                                <rect key="frame" x="0.0" y="0.0" width="293" height="103.33333333333333"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center">
+                                                <buttonConfiguration key="configuration" style="plain" titleAlignment="center">
                                                     <backgroundConfiguration key="background" cornerRadius="20">
-                                                        <color key="backgroundColor" systemColor="underPageBackgroundColor"/>
+                                                        <color key="backgroundColor" red="0.25766523889999998" green="0.54728929920000002" blue="0.017497076659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Raise it in secrecy">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="optionSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NkR-ro-BKW"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3m-zq-PWv">
-                                                <rect key="frame" x="0.0" y="115" width="333" height="84.666666666666686"/>
-                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B3m-zq-PWv">
+                                                <rect key="frame" x="0.0" y="123.33333333333337" width="293" height="103"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center">
+                                                <buttonConfiguration key="configuration" style="plain" titleAlignment="center">
                                                     <backgroundConfiguration key="background" cornerRadius="20">
-                                                        <color key="backgroundColor" systemColor="underPageBackgroundColor"/>
+                                                        <color key="backgroundColor" red="0.25766523889999998" green="0.54728929920000002" blue="0.017497076659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Tell authorities and let them deal with it">
+                                                            <attributes>
+                                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="optionSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZi-RY-Bd1"/>
@@ -79,9 +98,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ayv-Rb-TPU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="0gX-dn-DZU"/>
-                            <constraint firstAttribute="trailing" secondItem="Ayv-Rb-TPU" secondAttribute="trailing" constant="30" id="GWO-CJ-xee"/>
+                            <constraint firstItem="Ayv-Rb-TPU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="0gX-dn-DZU"/>
+                            <constraint firstItem="RAw-7h-BY5" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="F67-FS-r7N"/>
+                            <constraint firstAttribute="trailing" secondItem="Ayv-Rb-TPU" secondAttribute="trailing" constant="50" id="GWO-CJ-xee"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ayv-Rb-TPU" secondAttribute="bottom" constant="30" id="Vya-PX-sLY"/>
+                            <constraint firstItem="RAw-7h-BY5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aOp-bo-zLs"/>
+                            <constraint firstItem="RAw-7h-BY5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cDb-pj-SH9"/>
+                            <constraint firstAttribute="bottom" secondItem="RAw-7h-BY5" secondAttribute="bottom" id="dex-v0-AFH"/>
                             <constraint firstItem="Ayv-Rb-TPU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="qJX-Wo-7R3"/>
                         </constraints>
                     </view>
@@ -94,15 +117,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="4"/>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
         </scene>
     </scenes>
     <resources>
+        <image name="mysteriousegg" width="400" height="236.66667175292969"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="underPageBackgroundColor">
-            <color red="0.70980392156862748" green="0.71764705882352942" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
