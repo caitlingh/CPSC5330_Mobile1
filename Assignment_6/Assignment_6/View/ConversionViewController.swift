@@ -21,60 +21,40 @@ class ConversionViewController: UIViewController {
     @IBOutlet weak var gbpAmountLabel: UILabel!
     @IBOutlet weak var cadAmountLabel: UILabel!
     
-    // user input
-    var usd : Int = 0
-    
-    // display currency conversions
-    var showEUR = false
-    var showJPY = false
-    var showGBP = false
-    var showCAD = false
-    
-    // currency exchange rates
-    var eurRate : Double = 0.85
-    var jpyRate : Double = 145.00
-    var gbpRate : Double = 0.74
-    var cadRate : Double = 1.37
+    var conversionLogic = ConversionLogic()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        usdAmountLabel.text = "$\(usd)"
+        usdAmountLabel.text = "$\(conversionLogic.usd)"
         
-        if showEUR {
-            let eur = Double(usd) * eurRate
+        if let eur = conversionLogic.eur {
             eurAmountLabel.text = "€\(String(format: "%.2f", eur))"
         } else {
             eurLabel.isHidden = true
             eurAmountLabel.isHidden = true
         }
         
-        if showJPY {
-            let jpy = Double(usd) * jpyRate
+        if let jpy = conversionLogic.jpy {
             jpyAmountLabel.text = "¥\(String(format: "%.2f", jpy))"
         } else {
             jpyLabel.isHidden = true
             jpyAmountLabel.isHidden = true
         }
         
-        if showGBP {
-            let gbp = Double(usd) * gbpRate
+        if let gbp = conversionLogic.gbp {
             gbpAmountLabel.text = "£\(String(format: "%.2f", gbp))"
         } else {
             gbpLabel.isHidden = true
             gbpAmountLabel.isHidden = true
         }
         
-        if showCAD {
-            let cad = Double(usd) * cadRate
+        if let cad = conversionLogic.cad {
             cadAmountLabel.text = "C$\(String(format: "%.2f", cad))"
         } else {
             cadLabel.isHidden = true
-            eurAmountLabel.isHidden = true
+            cadAmountLabel.isHidden = true
         }
-        
-
-        // Do any additional setup after loading the view.
     }
 
     /*
@@ -86,7 +66,4 @@ class ConversionViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    
-
 }

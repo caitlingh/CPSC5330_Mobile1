@@ -12,14 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var errorMessage: UILabel!
     @IBOutlet weak var usdInput: UITextField!
     
-    // user input
-    var usd : Int = 0
-    
-    // switch toggles
-    var eurSwitch = true
-    var jpySwitch = true
-    var gbpSwitch = true
-    var cadSwitch = true
+    var conversionLogic = ConversionLogic()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculate(_ sender: UIButton) {
-        if let text = usdInput.text, let value = Int(text) {
-            usd = value
+        if conversionLogic.getUSD(input: usdInput.text) {
             errorMessage.isHidden = true
             self.performSegue(withIdentifier: "toConversion", sender: self)
         } else {
@@ -38,48 +30,28 @@ class ViewController: UIViewController {
     }
     
     @IBAction func euro(_ sender: UISwitch) {
-        if sender.isOn {
-            eurSwitch = true
-        } else {
-            eurSwitch = false
-        }
+        conversionLogic.setEURSwitch(sender.isOn)
     }
     
     @IBAction func yen(_ sender: UISwitch) {
-        if sender.isOn {
-            jpySwitch = true
-        } else {
-            jpySwitch = false
-        }
+        conversionLogic.setJPYSwitch(sender.isOn)
     }
     
     @IBAction func pound(_ sender: UISwitch) {
-        if sender.isOn {
-            gbpSwitch = true
-        } else {
-            gbpSwitch = false
-        }
+        conversionLogic.setGBPSwitch(sender.isOn)
     }
     
     @IBAction func canadian(_ sender: UISwitch) {
-        if sender.isOn {
-            cadSwitch = true
-        } else {
-            cadSwitch = false
-        }
+        conversionLogic.setCADSwitch(sender.isOn)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         if segue.identifier == "toConversion",
-               let calculation = segue.destination as? ConversionViewController {
-                calculation.usd = usd
-                calculation.showEUR = eurSwitch
-                calculation.showJPY = jpySwitch
-                calculation.showGBP = gbpSwitch
-                calculation.showCAD = cadSwitch
-            }
+           let destination = segue.destination as? ConversionViewController {
+            destination.conversionLogic = conversionLogic
+        }
     }
     
 }
