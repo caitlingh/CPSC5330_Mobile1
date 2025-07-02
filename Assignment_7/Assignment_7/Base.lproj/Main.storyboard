@@ -91,9 +91,6 @@
                                                         </label>
                                                     </subviews>
                                                 </tableViewCellContentView>
-                                                <connections>
-                                                    <segue destination="fKt-PO-wne" kind="show" id="NeH-b7-eq1"/>
-                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <variation key="default">
@@ -254,6 +251,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="villagerTable" destination="CE7-oj-UrW" id="ruE-Fg-1Zb"/>
+                        <segue destination="fKt-PO-wne" kind="show" identifier="toNPCViewController" id="tYf-gy-bKm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -424,18 +425,22 @@
                                                         <include reference="rLP-fZ-auh"/>
                                                     </mask>
                                                 </variation>
+                                                <connections>
+                                                    <outlet property="delegate" destination="fKt-PO-wne" id="iKB-vH-utk"/>
+                                                </connections>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpV-Bk-v8m">
                                                 <rect key="frame" x="0.0" y="259.00000000000006" width="280" height="34.333333333333314"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Back">
+                                                <buttonConfiguration key="configuration" style="plain" title="Save">
                                                     <backgroundConfiguration key="background" cornerRadius="10">
                                                         <color key="backgroundColor" red="0.13135365260000001" green="0.1861782676" blue="0.71721117420000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="VwI-q8-r41" kind="unwind" unwindAction="unwindToViewController:" id="gQi-To-x2f"/>
+                                                    <action selector="save:" destination="fKt-PO-wne" eventType="touchUpInside" id="o35-oX-l4x"/>
+                                                    <segue destination="VwI-q8-r41" kind="unwind" identifier="unwindToMainView" unwindAction="unwindToViewController:" id="gQi-To-x2f"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -582,6 +587,12 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="6gH-Id-Hs2"/>
+                    <connections>
+                        <outlet property="villagerBirthday" destination="Ubp-cx-B0Y" id="dwO-jx-F2C"/>
+                        <outlet property="villagerImage" destination="9qu-yY-ofF" id="3jy-vs-Xnh"/>
+                        <outlet property="villagerName" destination="aHY-nc-bRp" id="9yl-nH-pyr"/>
+                        <outlet property="villagerNotes" destination="eTz-R7-Usw" id="Ki5-L4-bSz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMh-y2-O0o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="VwI-q8-r41" userLabel="Exit" sceneMemberID="exit"/>
