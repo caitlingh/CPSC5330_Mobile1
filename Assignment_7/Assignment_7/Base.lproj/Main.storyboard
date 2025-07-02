@@ -434,6 +434,9 @@
                                                         <color key="backgroundColor" red="0.13135365260000001" green="0.1861782676" blue="0.71721117420000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </backgroundConfiguration>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="VwI-q8-r41" kind="unwind" unwindAction="unwindToViewController:" id="gQi-To-x2f"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -581,6 +584,7 @@
                     <navigationItem key="navigationItem" id="6gH-Id-Hs2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YMh-y2-O0o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="VwI-q8-r41" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="974.41860465116281" y="-3.0523255813953485"/>
         </scene>
